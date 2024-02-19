@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="loginDesign.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <style>
+            *{
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+               font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+            }
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background: url('Login.png') no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            header{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                backdrop-filter: blur(5px);
+                padding: 20px 100px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                z-index: 99;
+            }
+            .logo{
+                font-size: 2em;
+                color: #fff;
+                user-select: none;
+            }
+            .navigation a{
+                position: relative;
+                font-size: 1.1em;
+                color: #fff;
+                text-decoration: none;
+                font-weight: 500;
+                margin-left: 40px;
+            }
+            #furn{
+                color: #ff0000;
+                text-decoration: none;
+                font-weight: 500;
+                margin-left: 40px;
+            }
+            .navigation a::after{
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -6px;
+                width: 100%;
+                height: 3px;
+                background: #fff;
+                border-radius: 5px;
+                transform-origin: right;
+                transform: scaleX(0);
+                transition: transform .5s;
+            }
+            .navigation a:hover::after{
+                transform-origin: left;
+                transform: scaleX(1);
+            }
+            .navigation .btnLogin-popup{
+                width: 130px;
+                height: 50px;
+                background: transparent;
+                border: 2px solid #fff;
+                outline: none;
+                border-radius: 6px;
+                cursor: pointer;
+                font-size: 1.1em;
+                color: #fff;
+                font-weight: 500;
+                margin-left: 40px;
+                transition: .5s;
+            }
+            .navigation .btnLogin-popup:hover{
+                background: #fff;
+                color: #162938;
+            }
+            .card{
+                margin:10px;
+                margin-top: 20%;
+                padding:10px;
+                box-shadow: 0px 2px 4px grey;
+                transition: .5s;
+            }
+            .card:hover{
+                box-shadow: 0 10px 10px rgb(255, 255, 255);
+                z-index: 2;
+            }
+            .card-link{
+                margin-left: 17%;
+                text-align: center;
+                display: inline-block;
+                padding: 8px 16px;
+                background-color: #f70000;
+                text-decoration: none;
+                border-radius: 4px;
+                margin-top: 16px;
+                color: #fff;
+            }
+            .card-link:hover{
+                cursor: pointer;
+                background-color: #9d0707;
+                color: #fff;
+            }
+            ul li{
+                font-size: 18px;
+                list-style-type:circle;
+            }
+            .container{
+                margin-top: 5%;
+            }
+        </style> 
+    </head>
+    <body>
+        
+        <header>
+            <h2 class="logo">Tech</h2>
+            <nav class="navigation">
+                <a href="home.html">Home</a>
+                <a href="tech.html" id="TechStore">Tech</a>
+                <a href="furniture.html" id="furn">Appliances</a>
+                <a href="contact.html" id="contacts">Contact</a>
+                <button class="btnLogin-popup" id="loginNavBarBtn">Login</button>
+            </nav>
+        </header>
+        <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 23rem; background-color: rgb(56, 56, 56); color: white;">
+                    <img src="WashingMachine 9000.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title" style="font-size: 20px; font-weight: 750;">8000 SOFTWATER TECHNOLOGY</h5>
+                    <p class="card-text" style="font-size: 18px; font-weight: 400;">No colour fading with purified water at lower temperatures</p>
+                    </div>
+                    <ul>
+                        <li style="background-color: rgb(56, 56, 56); color: white;">Softwater Technology</li>
+                        <li style="background-color: rgb(56, 56, 56); color: white;">ProSteam Technology</li>
+                        <li style="background-color: rgb(56, 56, 56); color: white;">ProSense Technology</li>
+                        <li style="background-color: rgb(56, 56, 56); color: white;">Connectivity</li>
+                        <br>
+                        <br>
+                    </ul>
+                    <div class="card-body">
+                    <a href="#" class="card-link">View 8000 Series Products</a>
+                    </div>
+                </div>
+            </div>
+    <div class="col">
+        <div class="card" style="width: 23rem; background-color: rgb(56, 56, 56); color: white;">
+            <img src="WashingMachine7000.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" style="font-size: 21px; font-weight: 750;">7000 PROSTEAM TECHNOLOGY</h5>
+              <p class="card-text" style="font-size: 18px; font-weight: 400;">Adds steam to the end of the wash to remove wrinkles</p>
+            </div>
+            <ul>
+              <li style="background-color: rgb(56, 56, 56); color: white;">ProSteam Technology</li>
+              <li style="background-color: rgb(56, 56, 56); color: white;">ProSense Technology</li>
+              <li style="background-color: rgb(56, 56, 56); color: white;">Connectivity</li>
+              <br>
+              <br>
+              <br>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">View 7000 Series Products</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card" style="width: 23rem; background-color: rgb(56, 56, 56); color: white;">
+            <img src="WashingMachine7000.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" style="font-size: 21px; font-weight: 750;">6000 PROSENSE TECHNOLOGY</h5>
+              <p class="card-text" style="font-size: 18px; font-weight: 400;">Automatically adjusts time, water and energy consumption based on the size</p>
+            </div>
+            <ul>
+                <li style="background-color: rgb(56, 56, 56); color: white;">Softwater Technology</li>
+                <li style="background-color: rgb(56, 56, 56); color: white;">ProSteam Technology</li>
+                <li style="background-color: rgb(56, 56, 56); color: white;">ProSense Technology</li>
+                <li style="background-color: rgb(56, 56, 56); color: white;">Connectivity</li>
+                <br>
+                <br>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">View 8000 Series Products</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+    <div class="col">
+        <div class="card" style="width: 23rem; background-color: rgb(56, 56, 56); color: white;">
+            <img src="WashingMachine7000.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" style="font-size: 20px; font-weight: 750;">ULTRA 6 CORDLESS VACUUM</h5>
+              <p class="card-text" style="font-size: 18px; font-weight: 400;">Automatically adjusts time, water and energy consumption based on the size</p>
+            </div>
+            <ul>
+                <li style="background-color: rgb(56, 56, 56); color: white;">Softwater Technology</li>
+                <li style="background-color: rgb(56, 56, 56); color: white;">ProSteam Technology</li>
+                <li style="background-color: rgb(56, 56, 56); color: white;">ProSense Technology</li>
+                <li style="background-color: rgb(56, 56, 56); color: white;">Connectivity</li>
+                <br>
+                <br>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">View 8000 Series Products</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card" style="width: 23rem; background-color: rgb(56, 56, 56); color: white;">
+            <img src="WashingMachine7000.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" style="font-size: 21px; font-weight: 750;">6000 PROSENSE TECHNOLOGY</h5>
+              <p class="card-text" style="font-size: 18px; font-weight: 400;">Automatically adjusts time, water and energy consumption based on the size</p>
+            </div>
+            <ul>
+                <li style="background-color: rgb(56, 56, 56); color: white;">Softwater Technology</li>
+                <li style="background-color: rgb(56, 56, 56); color: white;">ProSteam Technology</li>
+                <li style="background-color: rgb(56, 56, 56); color: white;">ProSense Technology</li>
+                <li style="background-color: rgb(56, 56, 56); color: white;">Connectivity</li>
+                <br>
+                <br>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">View 8000 Series Products</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card" style="width: 23rem; background-color: rgb(56, 56, 56); color: white;">
+            <img src="WashingMachine7000.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" style="font-size: 21px; font-weight: 750;">6000 PROSENSE TECHNOLOGY</h5>
+              <p class="card-text" style="font-size: 18px; font-weight: 400;">Automatically adjusts time, water and energy consumption based on the size</p>
+            </div>
+            <ul>
+                <li style="background-color: rgb(56, 56, 56); color: white;">Softwater Technology</li>
+                <li style="background-color: rgb(56, 56, 56); color: white;">ProSteam Technology</li>
+                <li style="background-color: rgb(56, 56, 56); color: white;">ProSense Technology</li>
+                <li style="background-color: rgb(56, 56, 56); color: white;">Connectivity</li>
+                <br>
+                <br>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">View 8000 Series Products</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+        <script>
+            document.getElementById("loginNavBarBtn").onclick = function(){
+                window.location.href = "login.html"
+            }
+        </script>
+    </body>
+</html>
